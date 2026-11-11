@@ -10,35 +10,38 @@ import math
 def square_root(a):
     try:
         return math.sqrt(a)
-    except:
-        return ("ValueError")
+    except ValueError:
+        raise
 
 def hypotenuse(a, b):
-    return math.hypoty(a, bg)
+    return math.hypot(a, b)
 
-def add(a, b): 
+def add(a, b):
     return a + b
 
-def sub(a,b):
+def subtract(a,b):
     return a-b
 
-def multiply(a, b):
+def mul(a, b):
     return a * b
 
-def divide(a,b):
+def div(a,b):
     try:
         return b/a
-    except:
-        return "ZeroDivisionError"
+    except ZeroDivisionError:
+        raise
 
 def logarithm(a, b):
     try:
-        return math.log(b, a)
+        return math.log(a, b)
     except ValueError:
-        return "ValueError"
+        raise
 
-def exponent(a,b):
+def exp(a,b):
     return a**b
+
+
+
 
 
 
